@@ -1,6 +1,5 @@
 package com.example.model.book;
 
-import com.example.model.author.Author;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PastOrPresent;
 import lombok.AllArgsConstructor;
@@ -8,7 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 @Data
 @NoArgsConstructor
 @Builder
@@ -19,5 +19,5 @@ public class BookRequest {
     @NotBlank
     private String authorName;
     @PastOrPresent
-    private LocalDateTime realiseDate;
+    private LocalDate realiseDate;
 }

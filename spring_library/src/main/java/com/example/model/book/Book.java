@@ -12,7 +12,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+
 @Data
 @Entity
 @NoArgsConstructor
@@ -24,7 +25,7 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Id;
     private String title;
-    private LocalDateTime realiseDate;
+    private LocalDate realiseDate;
     @ManyToOne
     private Author author;
 }
