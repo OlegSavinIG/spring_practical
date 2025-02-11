@@ -4,8 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="first">
-      <change beforePath="$PROJECT_DIR$/src/test/java/practice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice/controller/UserControllerTest.java" afterDir="false" />
+    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="more tests">
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/BookAuthorMainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/exception/AuthorNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/exception/BookNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/exception/errormodel/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/author/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/author/AuthorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/BookRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/BookResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/repository/AuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring_library/src/test/java/com/example/controller/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_library/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practice/model/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/model/order/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,67 +61,90 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "corretto-21",
+    "last_opened_file_path": "C:/Users/oleg2/IdeaProjects/SpringPractical/spring_library/src/main/java/com/example"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.model.author" />
+      <recent name="com.example.service" />
+      <recent name="com.example.model" />
       <recent name="practice.repository" />
       <recent name="practice.service" />
-      <recent name="practice.exception" />
-      <recent name="practice.model" />
-      <recent name="practice.model.order" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oleg2\IdeaProjects\SpringPractical\spring_library\src\main\java\com\example" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.controller" />
       <recent name="practice.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest.shouldReturnBadRequestWhenEmailIsInvalid">
-    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringPractical" />
+  <component name="RunManager" selected="JUnit.BookControllerTest.getAllBooks_shouldHandleSorting">
+    <configuration name="BookControllerTest.getAllBooks_shouldHandleSorting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_library" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.controller.*" />
+          <option name="PATTERN" value="com.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="practice.controller" />
-      <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.getAllUsers_ShouldReturnUserSummaryView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringPractical" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="practice.controller" />
-      <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="getAllUsers_ShouldReturnUserSummaryView" />
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
+      <option name="METHOD_NAME" value="getAllBooks_shouldHandleSorting" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.getUser_ShouldReturnUserDetailsView" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringPractical" />
+    <configuration name="BookControllerTest.getAllBooks_shouldReturnEmptyPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_library" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.controller.*" />
+          <option name="PATTERN" value="com.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="practice.controller" />
-      <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="getUser_ShouldReturnUserDetailsView" />
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
+      <option name="METHOD_NAME" value="getAllBooks_shouldReturnEmptyPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerTest.getAllBooks_shouldReturnPaginatedResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
+      <option name="METHOD_NAME" value="getAllBooks_shouldReturnPaginatedResults" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookControllerTest.getBook_shouldReturnNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring_library" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
+      <option name="METHOD_NAME" value="getBook_shouldReturnNotFound" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,29 +166,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.shouldReturnBadRequestWhenNameIsBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringPractical" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="practice.controller" />
-      <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="shouldReturnBadRequestWhenNameIsBlank" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookControllerTest.getAllBooks_shouldHandleSorting" />
+        <item itemvalue="JUnit.BookControllerTest.getAllBooks_shouldReturnPaginatedResults" />
+        <item itemvalue="JUnit.BookControllerTest.getBook_shouldReturnNotFound" />
+        <item itemvalue="JUnit.BookControllerTest.getAllBooks_shouldReturnEmptyPage" />
         <item itemvalue="JUnit.UserControllerTest.shouldReturnBadRequestWhenEmailIsInvalid" />
-        <item itemvalue="JUnit.UserControllerTest.shouldReturnBadRequestWhenNameIsBlank" />
-        <item itemvalue="JUnit.UserControllerTest" />
-        <item itemvalue="JUnit.UserControllerTest.getUser_ShouldReturnUserDetailsView" />
-        <item itemvalue="JUnit.UserControllerTest.getAllUsers_ShouldReturnUserSummaryView" />
       </list>
     </recent_temporary>
   </component>
@@ -164,11 +192,26 @@
       <option name="project" value="LOCAL" />
       <updated>1739257842574</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="more tests">
+      <created>1739258239401</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739258239401</updated>
+    </task>
+    <task id="LOCAL-00003" summary="more tests">
+      <created>1739258950068</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739258950068</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="more tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="more tests" />
   </component>
 </project>

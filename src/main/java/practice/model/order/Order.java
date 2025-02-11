@@ -1,5 +1,7 @@
 package practice.model.order;
 
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.Id;
 import practice.model.user.User;
 
@@ -12,6 +14,7 @@ public class Order {
     private User user;
     private final List<String> items = new ArrayList<>();
     private Integer sum;
+    @Enumerated(EnumType.STRING)
     private Status status;
 
     public Order() {
