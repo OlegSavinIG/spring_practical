@@ -109,4 +109,25 @@ class UserControllerTest {
                 .andExpect(jsonPath("$.error").value("User not found"))
                 .andExpect(jsonPath("$.message").value("User not found"));
     }
+    @Test
+    void shouldReturnBadRequestWhenNameIsBlank() throws Exception {
+        UserRequest request = new UserRequest("", "valid@email.com");
+
+        mockMvc.perform(post("/user/create")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(request)))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("name: must not be blank"));
+    }
+
+    @Test
+    void shouldReturnBadRequestWhenEmailIsInvalid() throws Exception {
+        UserRequest request = new UserRequest("Valid Name", "invalid-email");
+
+        mockMvc.perform(post("/user/create")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(request)))
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("$.message").value("email: must be a well-formed email address"));
+    }
 }

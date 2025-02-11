@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/exception/errormodel/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/model/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/model/order/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/model/order/validation/Views.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/model/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/model/user/UserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/model/user/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/model/user/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/practice/controller/UserControllerTest.java" afterDir="false" />
+    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="first">
+      <change beforePath="$PROJECT_DIR$/src/test/java/practice/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/practice/controller/UserControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +58,7 @@
       <recent name="practice.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest">
+  <component name="RunManager" selected="JUnit.UserControllerTest.shouldReturnBadRequestWhenEmailIsInvalid">
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringPractical" />
       <extension name="coverage">
@@ -93,22 +70,6 @@
       <option name="PACKAGE_NAME" value="practice.controller" />
       <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.errorResponse_shouldNotBeAffectedByJsonViews" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SpringPractical" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="practice.controller" />
-      <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="errorResponse_shouldNotBeAffectedByJsonViews" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTest.updateUser_ShouldReturnNoContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.shouldReturnBadRequestWhenEmailIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SpringPractical" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +116,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="practice.controller" />
       <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="updateUser_ShouldReturnNoContent" />
+      <option name="METHOD_NAME" value="shouldReturnBadRequestWhenEmailIsInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.shouldReturnBadRequestWhenNameIsBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringPractical" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practice.controller" />
+      <option name="MAIN_CLASS_NAME" value="practice.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnBadRequestWhenNameIsBlank" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserControllerTest.shouldReturnBadRequestWhenEmailIsInvalid" />
+        <item itemvalue="JUnit.UserControllerTest.shouldReturnBadRequestWhenNameIsBlank" />
         <item itemvalue="JUnit.UserControllerTest" />
         <item itemvalue="JUnit.UserControllerTest.getUser_ShouldReturnUserDetailsView" />
         <item itemvalue="JUnit.UserControllerTest.getAllUsers_ShouldReturnUserSummaryView" />
-        <item itemvalue="JUnit.UserControllerTest.errorResponse_shouldNotBeAffectedByJsonViews" />
-        <item itemvalue="JUnit.UserControllerTest.updateUser_ShouldReturnNoContent" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +157,18 @@
       <option name="presentableId" value="Default" />
       <updated>1739205635976</updated>
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1739257842574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739257842574</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
 </project>
