@@ -4,12 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="book and author">
+    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="tests">
+      <change afterPath="$PROJECT_DIR$/onlineshop/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/OnlineShopeMainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/config/ModelMapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/OrderNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/errormodel/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/CustomerRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/CustomerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OrderRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OrderResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/ProductRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/ProductResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/test/java/practice/controller/OrderControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineshop/src/test/java/practice/controller/objectmapper/ObjectMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring_library/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/BookRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/model/book/BookRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_library/src/test/java/com/example/controller/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_library/src/test/java/com/example/controller/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_library/src/main/java/com/example/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/controller/BookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +51,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -46,45 +76,36 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-21",
-    "last_opened_file_path": "C:/Users/oleg2/IdeaProjects/SpringPractical/spring_library/src/main/java/com/example"
+    "last_opened_file_path": "C:/Users/oleg2/IdeaProjects/SpringPractical/onlineshop/src/main/java/practice/exception"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="practice.service" />
+      <recent name="practice.model.order" />
       <recent name="com.example.model.author" />
       <recent name="com.example.service" />
       <recent name="com.example.model" />
-      <recent name="practice.repository" />
-      <recent name="practice.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oleg2\IdeaProjects\SpringPractical\onlineshop\src\main\java\practice\exception" />
       <recent name="C:\Users\oleg2\IdeaProjects\SpringPractical\spring_library\src\main\java\com\example" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.example.controller" />
       <recent name="practice.controller" />
+      <recent name="com.example.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookControllerTest.getAllBooks_ShouldReturnEmptyPage">
-    <configuration name="BookControllerTest.createBook_ShouldReturnOk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_library" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
-      <option name="METHOD_NAME" value="createBook_ShouldReturnOk" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.OrderControllerTest.testCreateOrder">
     <configuration name="BookControllerTest.getAllBooks_ShouldReturnEmptyPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring_library" />
       <extension name="coverage">
@@ -101,49 +122,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.getAllBooks_ShouldReturnPaginatedResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_library" />
+    <configuration name="ObjectMapperTest.testJsonToProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="onlineshop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="PATTERN" value="objectmapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
-      <option name="METHOD_NAME" value="getAllBooks_ShouldReturnPaginatedResults" />
+      <option name="PACKAGE_NAME" value="objectmapper" />
+      <option name="MAIN_CLASS_NAME" value="objectmapper.ObjectMapperTest" />
+      <option name="METHOD_NAME" value="testJsonToProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.getAllBooks_ShouldReturnPaginatedResultsWithSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_library" />
+    <configuration name="ObjectMapperTest.testProductToJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="onlineshop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="PATTERN" value="objectmapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
-      <option name="METHOD_NAME" value="getAllBooks_ShouldReturnPaginatedResultsWithSort" />
+      <option name="PACKAGE_NAME" value="objectmapper" />
+      <option name="MAIN_CLASS_NAME" value="objectmapper.ObjectMapperTest" />
+      <option name="METHOD_NAME" value="testProductToJson" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.testGetAllBooks_InvalidPage_ReturnsBadRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="spring_library" />
+    <configuration name="OrderControllerTest.testCreateOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="onlineshop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.controller.*" />
+          <option name="PATTERN" value="practice.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.controller.BookControllerTest" />
-      <option name="METHOD_NAME" value="testGetAllBooks_InvalidPage_ReturnsBadRequest" />
+      <option name="PACKAGE_NAME" value="practice.controller" />
+      <option name="MAIN_CLASS_NAME" value="practice.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="testCreateOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderControllerTest.testGetOrderById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="onlineshop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="practice.controller" />
+      <option name="MAIN_CLASS_NAME" value="practice.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="testGetOrderById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderControllerTest.testCreateOrder" />
+        <item itemvalue="JUnit.OrderControllerTest.testGetOrderById" />
+        <item itemvalue="JUnit.ObjectMapperTest.testProductToJson" />
+        <item itemvalue="JUnit.ObjectMapperTest.testJsonToProduct" />
         <item itemvalue="JUnit.BookControllerTest.getAllBooks_ShouldReturnEmptyPage" />
-        <item itemvalue="JUnit.BookControllerTest.getAllBooks_ShouldReturnPaginatedResultsWithSort" />
-        <item itemvalue="JUnit.BookControllerTest.getAllBooks_ShouldReturnPaginatedResults" />
-        <item itemvalue="JUnit.BookControllerTest.createBook_ShouldReturnOk" />
-        <item itemvalue="JUnit.BookControllerTest.testGetAllBooks_InvalidPage_ReturnsBadRequest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,13 +233,28 @@
       <option name="project" value="LOCAL" />
       <updated>1739280799121</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="tests">
+      <created>1739286530279</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739286530279</updated>
+    </task>
+    <task id="LOCAL-00006" summary="tests">
+      <created>1739286548277</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739286548277</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="more tests" />
     <MESSAGE value="book and author" />
-    <option name="LAST_COMMIT_MESSAGE" value="book and author" />
+    <MESSAGE value="tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests" />
   </component>
 </project>
