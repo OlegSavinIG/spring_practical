@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,8 +19,9 @@ import practice.model.product.ProductResponse;
 import practice.service.ProductService;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
-@RestController
+@Controller
 @RequestMapping("/products")
 @RequiredArgsConstructor
 public class ProductController {
@@ -27,9 +29,18 @@ public class ProductController {
     private final ObjectMapper objectMapper;
 
     @GetMapping
-    public ResponseEntity<List<ProductResponse>> getAllProducts() {
+    public ResponseEntity<List<String>> getAllProducts() {
         List<ProductResponse> responses = productService.findAll();
-        return ResponseEntity.ok(responses);
+        List<String> result = responses.stream()
+                .map(value -> {
+                    try {
+                        return objectMapper.writeValueAsString(value);
+                    } catch (JsonProcessingException e) {
+                        throw new RuntimeException(e);
+                    }
+                })
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(result);
     }
 
     @GetMapping("/{id}")
