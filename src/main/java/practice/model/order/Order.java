@@ -1,11 +1,13 @@
 package practice.model.order;
 
+import jakarta.persistence.Id;
 import practice.model.user.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
+    @Id
     private Long id;
     private User user;
     private final List<String> items = new ArrayList<>();

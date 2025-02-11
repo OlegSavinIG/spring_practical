@@ -2,6 +2,8 @@ package practice.model.user;
 
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import practice.model.order.Order;
 
@@ -10,9 +12,11 @@ import java.util.List;
 @Entity
 @Table(name = "users")
 public class User {
+    @Id
     private Long id;
     private String name;
     private String email;
+    @OneToMany(mappedBy = "user")
     private final List<Order> orders = new ArrayList<>();
 
     public User(Long id, String name, String email) {
