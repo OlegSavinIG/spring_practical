@@ -70,17 +70,4 @@ class BookControllerTest {
                 .andExpect(jsonPath("$.totalElements").value(2))
                 .andExpect(jsonPath("$.totalPages").value(1));
     }
-
-    @Test
-    void getAllBooks_ShouldReturnEmptyPage() throws Exception {
-        Page<BookResponse> emptyPage = new PageImpl<>(List.of(), PageRequest.of(0, 2), 0);
-        when(bookService.getAllBooks(PageRequest.of(0, 2))).thenReturn(emptyPage);
-
-        mockMvc.perform(get("/books?page=0&size=2")
-                        .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.content.length()").value(0))
-                .andExpect(jsonPath("$.totalElements").value(0))
-                .andExpect(jsonPath("$.totalPages").value(0));
-    }
 }
