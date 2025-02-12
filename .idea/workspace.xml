@@ -4,42 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="tests">
-      <change afterPath="$PROJECT_DIR$/onlineshop/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/OnlineShopeMainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/config/ModelMapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/OrderNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/ProductNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/exception/errormodel/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/CustomerRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/customer/CustomerResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/order/OrderResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/ProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/model/product/ProductResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/OrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/main/java/practice/service/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/test/java/practice/controller/OrderControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineshop/src/test/java/practice/controller/objectmapper/ObjectMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="651a7b10-160e-4bea-9876-b0abe1710a9c" name="Changes" comment="product order customer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring_library/src/main/java/com/example/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_library/src/main/java/com/example/controller/BookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "corretto-21",
-    "last_opened_file_path": "C:/Users/oleg2/IdeaProjects/SpringPractical/onlineshop/src/main/java/practice/exception"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oleg2/IdeaProjects/SpringPractical/onlineshop/src/main/java/practice/exception&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="practice.service" />
@@ -247,7 +213,28 @@
       <option name="project" value="LOCAL" />
       <updated>1739286548277</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="product order customer">
+      <created>1739296393755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739296393755</updated>
+    </task>
+    <task id="LOCAL-00008" summary="product order customer">
+      <created>1739296839122</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739296839122</updated>
+    </task>
+    <task id="LOCAL-00009" summary="product order customer">
+      <created>1739296966631</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739296966631</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -255,6 +242,7 @@
     <MESSAGE value="more tests" />
     <MESSAGE value="book and author" />
     <MESSAGE value="tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests" />
+    <MESSAGE value="product order customer" />
+    <option name="LAST_COMMIT_MESSAGE" value="product order customer" />
   </component>
 </project>
